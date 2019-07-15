@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    .navbar-light {
+      transition: 900ms ease;
+    }
+
+    .navbar-light.scrolled {
+      background-color: #000;
+    }
+
+    #wave:before {
+      width: 100%;
+      height: 100vh;
+      background: inherit;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transform-origin: top left;
+      transform: scaleY(4deg)
+    }
+
+    .navbar-light li a:hover {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home" style="color: #fff;">MITCH</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home" style="color: #fff;">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" style="color: #fff;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project" style="color: #fff;">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" style="color: #fff">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="
+  padding-top: 5%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  height: 100vh; background: #000" id="home" class="wave">
+    <img src="https://images.pexels.com/photos/2443865/pexels-photo-2443865.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      alt="" class="rounded-circle" style="height:250px; width:250px;"><br><br><br>
+    <h1 style="color: #fff; font-size:60px;">I'm Mitch</h1><br>
+    <!-- <h2 class="word boom">
+      <span>BOOM1</span>
+    </h2> -->
+    <div class="typewriter">
+      <div class="typewriter-text" style="color: #fff;">Software Developer.</div>
+    </div><br><br>
+    <a class="btn1 text-center" href="" style="background-color: #000;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a class="btn1 text-center" href="" style="background-color: #000;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a class="btn1 text-center" href="" style="background-color: #000;">
+      <i class="fab fa-google"></i>
+    </a>
+    <a class="btn1 text-center" href="" style="background-color: #000;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a class="btn1 text-center" href="" style="background-color: #000;">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+  <div style="display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;" id="about">
+    <div class="row">
+      <div class="col-md-5 col-sm-12">
+        <img src="images/riri2.png" alt="" style="height: 450px; width: 350px; display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;">
+      </div>
+      <div class="col-md-7 col-md-offset col-sm-12">
+        <br><br><br><br>
+        <h1> SOFTWARE DEVELOPER.</h1><br>
+        <P>I am <strong>Mitch Muhu</strong>.I am a simple, creative, enthusiastic and fun-loving person. I always like
+          to create something which will be helpful to others.</P>
+        <p>I have vast knowledge in HTML5, CSS3, Javascript, JQuery, and Python.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Name:</strong> Mitch Muhu</p>
+            <p><strong>Age:</strong> 18 years</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Phone:</strong> +254704941404</p>
+            <p><strong>Email:</strong> mitchndungu21@gmail.com</p>
+          </div>
+        </div>
+        <a href="#project" class="btn btn-dark" style="background-color: #000;">My Projects</a>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  height: 100vh;" id="project">
+    <h2>PROJECTS</h2>
+  </div>
+  <div style="display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  height: 100vh;" id="contact">
+    <h2>CONTACT</h2>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  <script>
+    $(window).scroll(function () {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 625);
+    });
+  </script>
+</body>
+
+</html>
